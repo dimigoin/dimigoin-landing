@@ -142,7 +142,8 @@ html body #content #store #item #description #text {
 }
 html body #background {
   overflow: hidden;
-  flex: 1;
+  align-items: center;
+  align-self: stretch;
 }
 html body #background #default {
   display: block;

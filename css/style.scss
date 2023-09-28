@@ -180,7 +180,8 @@ html {
 
     #background {
       overflow: hidden;
-      flex: 1;
+      align-items: center;
+      align-self: stretch;
 
       #default {
         display: block;
