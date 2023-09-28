@@ -4,14 +4,14 @@ const installButtonIcon = document.querySelector('#button #icon');
 
 switch (getMobileOperatingSystem()) {
   case 'iOS':
-    storeLink.href = 'https://redirect.dimigo.in/app-ios';
     storeLink.target = '_blank';
+    storeLink.href = 'https://redirect.dimigo.in/app-ios';
     installButtonText.textContent = '앱스토어에서 받기';
     installButtonIcon.src = '/svg/ios-button.svg';
     break;
   case 'Android':
-    storeLink.href = 'https://redirect.dimigo.in/app-aos';
     storeLink.target = '_blank';
+    storeLink.href = 'https://redirect.dimigo.in/app-aos';
     installButtonText.textContent = '플레이스토어에서 받기';
     installButtonIcon.src = '/svg/aos-button.svg';
     break;
