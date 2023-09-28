@@ -1,0 +1,162 @@
+@import url("./fonts/suit.css");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "SUIT", sans-serif;
+}
+
+html {
+  background: #EFF0F6;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+}
+html body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding-top: 96px;
+  gap: 48px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+@media (max-width: 480px) {
+  html body {
+    padding-top: 64px;
+  }
+}
+html body div {
+  display: flex;
+  flex-direction: column;
+}
+html body a {
+  text-decoration: none;
+}
+html body #content {
+  width: calc(100% - 128px);
+  max-width: 1264px;
+  padding: 0px 64px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+@media (max-width: 860px) {
+  html body #content {
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+  }
+}
+html body #content #header {
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+@media (max-width: 860px) {
+  html body #content #header {
+    align-items: center;
+  }
+}
+html body #content #header > #text {
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+}
+@media (max-width: 860px) {
+  html body #content #header > #text {
+    align-items: center;
+  }
+}
+html body #content #header > #text #subtitle {
+  color: #8D91A0;
+  font-size: 24px;
+  font-weight: 500;
+}
+@media (max-width: 480px) {
+  html body #content #header > #text #subtitle {
+    font-size: 20px;
+  }
+}
+html body #content #header > #text #title {
+  color: #555969;
+  font-size: 56px;
+  font-weight: 800;
+}
+html body #content #header > #text #title #highlight {
+  color: #E83C77;
+}
+@media (max-width: 480px) {
+  html body #content #header > #text #title {
+    font-size: 36px;
+  }
+}
+html body #content #header #button {
+  flex-direction: row;
+  padding: 16px 24px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  background-color: #FEFEFF;
+}
+@media (max-width: 480px) {
+  html body #content #header #button {
+    padding: 12px 20px;
+  }
+}
+html body #content #header #button #text {
+  color: #73778A;
+  font-size: 16px;
+  font-weight: 500;
+}
+html body #content #store {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 48px;
+}
+@media (max-width: 480px) {
+  html body #content #store {
+    display: none;
+  }
+}
+html body #content #store #item {
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+html body #content #store #item #description {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+html body #content #store #item #description #text {
+  color: #3D404A;
+  font-size: 16px;
+  font-weight: 500;
+}
+html body #background {
+  overflow: hidden;
+  flex: 1;
+}
+html body #background #default {
+  display: block;
+}
+html body #background #small {
+  display: none;
+}
+@media (max-width: 480px) {
+  html body #background #default {
+    display: none;
+  }
+  html body #background #small {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
